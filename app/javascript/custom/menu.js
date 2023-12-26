@@ -1,11 +1,15 @@
 'use strict';
 
+const addToggleListener = (selected_id, menu_id, toggle_class) => {
+  const selected_element = document.querySelector(`#${selected_id}`);
+  selected_element.addEventListener('click', (event) => {
+    event.preventDefault();
+    const menu = document.querySelector(`#${menu_id}`);
+    menu.classList.toggle(toggle_class);
+  });
+}
 
 document.addEventListener('turbo:load',  () => {
-  const account = document.querySelector('#account');
-  account.addEventListener('click', (event) => {
-    event.preventDefault();
-    const menu = document.querySelector('#dropdown-menu');
-    menu.classList.toggle('active');
-  })
-})
+  addToggleListener('hamburger', 'navbar-menu', 'collapse');
+  addToggleListener('account', 'dropdown-menu', 'active');
+});
