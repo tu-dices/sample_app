@@ -6,8 +6,9 @@ ruby '3.2.2'
 gem 'bcrypt', '3.1.18'
 gem 'bootsnap', '1.16.0', require: false
 gem 'bootstrap-sass'
+gem 'bootstrap-will_paginate', '1.0.0'
 gem 'faker', '2.21.0'
-gem 'htmlbeautifier',  '1.3.1'
+gem 'htmlbeautifier', '1.3.1'
 gem 'importmap-rails', '1.1.5'
 gem 'jbuilder',        '2.11.5'
 gem 'puma',            '5.6.5'
@@ -17,6 +18,7 @@ gem 'sprockets-rails', '3.4.2'
 gem 'sqlite3',         '1.6.1'
 gem 'stimulus-rails',  '1.2.1'
 gem 'turbo-rails',     '1.4.0'
+gem 'will_paginate', '3.3.1'
 
 group :development, :test do
   gem 'debug', '1.7.1', platforms: %i[mri mingw x64_mingw]
