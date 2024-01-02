@@ -79,7 +79,6 @@ class RememberingTest < UsersLogin
 
   test 'login without remembering' do
     log_in_as(@user, remember_me: '1')
-    delete logout_path
     log_in_as(@user, remember_me: '0')
     assert cookies[:remember_token].blank?
   end
