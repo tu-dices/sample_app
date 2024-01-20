@@ -68,7 +68,7 @@ Rails.application.configure do # rubocop:disable Metrics/BlockLength
   config.action_mailer.delivery_method = :smtp
   host = 'https://sample-app-f8ef.onrender.com'
   config.action_mailer.default_url_options = { host: host }
-  ActionMailer::Base.smtp_settiongs = {
+  ActionMailer::Base.smtp_settings = {
     port: '587',
     address: 'smtp.mailgun.org',
     user_name: ENV['MAILGUN_SMTP_LOGIN'],
