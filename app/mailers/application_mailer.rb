@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'yusei.nagasawa@techouse.jp'
+  default from: 'user@realdomain.com'
   layout 'mailer'
 end
